@@ -55,6 +55,7 @@ export interface TestimonialItem {
 	name: string;
 	title: string;
 	testimonial: string;
+	link: string;
 }
 
 // --------------------------------------------------------

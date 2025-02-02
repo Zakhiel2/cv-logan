@@ -71,6 +71,9 @@ export const textTranslations = {
 		view_cv: "View CV",
 		link_cv: "/documents/de/CV_BOVET_Logan_DE.pdf",
 		contact_me: "Kontaktieren Sie mich",
+
+		references: "Referenzen",
+		references_description: "Was meine vorherigen Kollegen sagen zu meiner Arbeit",
 	},
 	en: {
 		hero_text: "Logan BOVET",
@@ -82,6 +85,9 @@ export const textTranslations = {
 		view_cv: "View CV",
 		link_cv: "/documents/CV_BOVET_Logan_EN.pdf",
 		contact_me: "Contact Me",
+
+		references: "References",
+		references_description: "What past colleagues say about working with me",
 	},
 	fr: {
 		hero_text: "Logan BOVET",
@@ -94,6 +100,9 @@ export const textTranslations = {
 		view_cv: "Voir CV",
 		link_cv: "/documents/fr/CV_BOVET_Logan_FR.pdf",
 		contact_me: "Me Contacter",
+
+		references: "Références",
+		references_description: "Ce que disent mes anciens collègues",
 	},
 } as const;
 

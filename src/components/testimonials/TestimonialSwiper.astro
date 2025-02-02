@@ -9,6 +9,9 @@ import { getTranslatedData } from "@js/translationUtils";
 // data
 const currLocale = getLocaleFromUrl(Astro.url);
 const testimonials = getTranslatedData("testimonialData", currLocale);
+import { useTranslations } from "@js/translationUtils"
+const t = useTranslations(currLocale);
+
 ---
 
 <section
@@ -29,8 +32,8 @@ const testimonials = getTranslatedData("testimonialData", currLocale);
 	<div id="testimonial-swiper-trigger" class="site-container relative">
 		<div class="mb-16 flex flex-col items-start justify-between gap-8 md:flex-row md:items-end">
 			<div class="max-w-2xl" data-aos="fade-up" data-aos-trigger="#testimonial-swiper-trigger">
-				<h2 class="h2 mb-4">Client Testimonials</h2>
-				<p class="description text-xl">What our clients say about working with us</p>
+				<h2 class="h2 mb-4">{t("references")}</h2>
+				<p class="description text-xl">{t("references_description")}</p>
 			</div>
 
 			<!-- Navigation Buttons -->
