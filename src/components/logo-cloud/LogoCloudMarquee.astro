@@ -9,6 +9,12 @@
  */
 
 import { Icon } from "astro-icon/components";
+
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const currLocale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(currLocale);
 ---
 
 <section
@@ -16,9 +22,9 @@ import { Icon } from "astro-icon/components";
 	class="bg-base-100 dark:bg-background dark:border-base-900 py-16 md:py-20 dark:border-y"
 >
 	<div class="mx-auto max-w-xl px-4 text-center">
-		<h2 class="h3">Trusted by Industry Leaders</h2>
+		<h2 class="h3">{t("logocloud_title")}</h2>
 		<p class="description mt-4 text-base opacity-80">
-			Join dozens of companies improving their conversion rates
+			{t("logocloud_description")}
 		</p>
 	</div>
 	<div class="relative mx-auto max-w-[2000px] overflow-hidden px-4">
@@ -37,25 +43,51 @@ import { Icon } from "astro-icon/components";
 			<!-- Each animate-marquee section needs to have the exact same icons. Just do one then copy / paste -->
 			<div class="animate-marquee flex min-w-full shrink-0 items-center justify-around gap-32">
 
-				<Icon name="logos/astro" class="logo py-2" aria-label="logo" />
-
-				<Icon name="logos/spotify" class="logo" aria-label="logo" />
-
-				<Icon name="logos/framer" class="logo" aria-label="logo" />
-
-				<Icon name="logos/dribbble" class="logo" aria-label="logo" />
-
-				<Icon name="logos/sanity" class="logo py-2" aria-label="logo" />
-
-				<Icon name="logos/contentfull" class="logo" aria-label="logo" />
-
-				<Icon name="logos/github" class="logo" aria-label="logo" />
-
-				<Icon name="logos/notion" class="logo" aria-label="logo" />
-
 				<Icon name="logos/adobe" class="logo" aria-label="logo" />
 
-				<Icon name="logos/zoom" class="logo" aria-label="logo" />
+				<Icon name="logos/atlassian" class="logo py-2" aria-label="logo" />
+	
+				<Icon name="logos/bitdefender" class="logo py-2" aria-label="logo" />
+	
+				<Icon name="logos/cisco" class="logo py-2" aria-label="logo" />
+	
+				<Icon name="logos/fortinet" class="logo py-3" aria-label="logo" />
+	
+				<Icon name="logos/github" class="logo" aria-label="logo" />
+	
+				<Icon name="logos/glpi" class="logo" aria-label="logo" />
+	
+				<Icon name="logos/google" class="logo py-1" aria-label="logo" />
+	
+				<Icon name="logos/halo" class="logo py-2" aria-label="logo" />
+	
+				<Icon name="logos/heimdal" class="logo py-1" aria-label="logo" />
+	
+				<Icon name="logos/hubspot" class="logo py-1" aria-label="logo" />
+	
+				<Icon name="logos/ionos" class="logo py-2" aria-label="logo" />
+	
+				<Icon name="logos/kaspersky" class="logo py-1" aria-label="logo" />
+	
+				<Icon name="logos/linkedin" class="logo py-1" aria-label="logo" />
+	
+				<Icon name="logos/microsoft" class="logo py-2" aria-label="logo" />
+	
+				<Icon name="logos/n8n" class="logo py-1" aria-label="logo" />
+				
+				<Icon name="logos/openai" class="logo py-1" aria-label="logo" />
+	
+				<Icon name="logos/ovh" class="logo py-2" aria-label="logo" />
+	
+				<Icon name="logos/slack" class="logo py-2" aria-label="logo" />
+	
+				<Icon name="logos/teamviewer" class="logo py-2" aria-label="logo" />
+	
+				<Icon name="logos/trello" class="logo py-2" aria-label="logo" />
+	
+				<Icon name="logos/vmware" class="logo py-2" aria-label="logo" />
+				
+				<Icon name="logos/zapier" class="logo py-1" aria-label="logo" />
 			</div>
 
 			<!-- Each animate-marquee section needs to have the exact same icons. Just do one then copy / paste -->
@@ -64,25 +96,51 @@ import { Icon } from "astro-icon/components";
 				class="animate-marquee flex min-w-full shrink-0 items-center justify-around gap-32"
 			>
 
-				<Icon name="logos/astro" class="logo py-2" aria-label="logo" />
+			<Icon name="logos/adobe" class="logo" aria-label="logo" />
 
-				<Icon name="logos/spotify" class="logo" aria-label="logo" />
+			<Icon name="logos/atlassian" class="logo py-2" aria-label="logo" />
 
-				<Icon name="logos/framer" class="logo" aria-label="logo" />
+			<Icon name="logos/bitdefender" class="logo py-2" aria-label="logo" />
 
-				<Icon name="logos/dribbble" class="logo" aria-label="logo" />
+			<Icon name="logos/cisco" class="logo py-2" aria-label="logo" />
 
-				<Icon name="logos/sanity" class="logo py-2" aria-label="logo" />
+			<Icon name="logos/fortinet" class="logo py-3" aria-label="logo" />
 
-				<Icon name="logos/contentfull" class="logo" aria-label="logo" />
+			<Icon name="logos/github" class="logo" aria-label="logo" />
 
-				<Icon name="logos/github" class="logo" aria-label="logo" />
+			<Icon name="logos/glpi" class="logo" aria-label="logo" />
 
-				<Icon name="logos/notion" class="logo" aria-label="logo" />
+			<Icon name="logos/google" class="logo py-1" aria-label="logo" />
 
-				<Icon name="logos/adobe" class="logo" aria-label="logo" />
+			<Icon name="logos/halo" class="logo py-2" aria-label="logo" />
 
-				<Icon name="logos/zoom" class="logo" aria-label="logo" />
+			<Icon name="logos/heimdal" class="logo py-1" aria-label="logo" />
+
+			<Icon name="logos/hubspot" class="logo py-1" aria-label="logo" />
+
+			<Icon name="logos/ionos" class="logo py-2" aria-label="logo" />
+
+			<Icon name="logos/kaspersky" class="logo py-1" aria-label="logo" />
+
+			<Icon name="logos/linkedin" class="logo py-1" aria-label="logo" />
+
+			<Icon name="logos/microsoft" class="logo py-2" aria-label="logo" />
+
+			<Icon name="logos/n8n" class="logo py-1" aria-label="logo" />
+			
+			<Icon name="logos/openai" class="logo py-1" aria-label="logo" />
+
+			<Icon name="logos/ovh" class="logo py-2" aria-label="logo" />
+
+			<Icon name="logos/slack" class="logo py-2" aria-label="logo" />
+
+			<Icon name="logos/teamviewer" class="logo py-2" aria-label="logo" />
+
+			<Icon name="logos/trello" class="logo py-2" aria-label="logo" />
+
+			<Icon name="logos/vmware" class="logo py-2" aria-label="logo" />
+			
+			<Icon name="logos/zapier" class="logo py-1" aria-label="logo" />
 			</div>
 		</div>
 	</div>

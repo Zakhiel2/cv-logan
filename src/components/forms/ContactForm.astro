@@ -4,20 +4,25 @@ import Button from "@components/button/Button.astro";
 import { Label } from "@/components/starwind/label";
 import { Input, InputWrapper } from "@/components/starwind/input";
 import { Textarea } from "@/components/starwind/textarea";
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const currLocale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(currLocale);
 ---
 
 <form class="space-y-8">
 	<InputWrapper>
-		<Label for="name">Name</Label>
+		<Label for="name">{t("form_name")}</Label>
 		<Input name="name" type="text" />
 	</InputWrapper>
 	<InputWrapper>
-		<Label for="email">Email</Label>
+		<Label for="email">{t("form_email")}</Label>
 		<Input required name="email" type="email" />
 	</InputWrapper>
 	<InputWrapper>
-		<Label for="message">Message</Label>
+		<Label for="message">{t("form_message")}</Label>
 		<Textarea name="message" required rows="4" />
 	</InputWrapper>
-	<Button type="submit" class="w-full">Send Message</Button>
+	<Button type="submit" class="w-full">{t("form_send")}</Button>
 </form>

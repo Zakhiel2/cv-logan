@@ -4,6 +4,12 @@ import { Icon } from "astro-icon/components";
 
 import authorImage from "@/assets/images/logan.jpg";
 
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const currLocale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(currLocale);
+
 interface AboutItem {
 	title: string;
 	description: string;
@@ -12,19 +18,24 @@ interface AboutItem {
 
 const aboutItems: AboutItem[] = [
 	{
-		title: "UI/UX Design",
-		description: "Creating intuitive and engaging user experiences through thoughtful design",
-		icon: "tabler/pencil",
+		title: t("aboutme_1"),
+		description: t("aboutme_1_description"),
+		icon: "tabler/user-group",
 	},
 	{
-		title: "Web Development",
-		description: "Building modern, responsive websites using the latest technologies",
-		icon: "tabler/devices",
+		title: t("aboutme_2"),
+		description: t("aboutme_2_description"),
+		icon: "tabler/wrench-hammer",
 	},
 	{
-		title: "Brand Identity",
-		description: "Developing cohesive brand identities that tell compelling stories",
-		icon: "tabler/palette",
+		title: t("aboutme_3"),
+		description: t("aboutme_3_description"),
+		icon: "tabler/shield",
+	},
+	{
+		title: t("aboutme_4"),
+		description: t("aboutme_4_description"),
+		icon: "tabler/lecture",
 	},
 ];
 ---
@@ -35,10 +46,9 @@ const aboutItems: AboutItem[] = [
 			<div class="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
 				<div class="order-2 lg:order-1">
 					<div data-aos="fade-right" data-aos-trigger="#about">
-						<h2 class="text-foreground h2 mb-6">About Me</h2>
-						<p class="description mb-12 leading-relaxed">
-							With over a decade of experience in digital design, I specialize in creating
-							user-centered experiences that combine aesthetics with functionality.
+						<h2 class="text-foreground h2 mb-6">{t("aboutme_title")}</h2>
+						<p class="description text-lg mb-12 leading-relaxed">
+							{t("aboutme_description")}
 						</p>
 					</div>
 					<div class="grid gap-6 md:grid-cols-2">
