@@ -132,7 +132,7 @@ export const textTranslations = {
 		contact_mobility: "Mobility",
 		contact_mobility_description: "Vienna, Austria",
 		contact_interestedin: "Interested in",
-		contact_interestedin_description: "- Support Manager \n - IT Manager \n - Technical Support",
+		contact_interestedin_description: "123 Design Street\nCreative City, DC 12345",
 
 		form_name: "Name",
 		form_email: "Email",
