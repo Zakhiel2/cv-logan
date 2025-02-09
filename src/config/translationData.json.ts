@@ -63,7 +63,7 @@ export const dataTranslations = {
 export const textTranslations = {
   de: {
 		hero_text: "Logan BOVET",
-		hero_description: `Dynamisch und ergebnisorientiert, habe ich eine nachweisliche Erfolgsbilanz im IT-Projektmanagement und in der Führung von Teams.`,
+		hero_description: `Bereitstellung wirkungsvoller IT-Dienste durch Innovation, strategische Führung und operative Exzellenz.`,
 		back_to_all_posts: "Zurück zu allen Beiträgen",
 		updated: "Aktualisiert",
 		share_this_article: "Teilen Sie diesen Artikel",
@@ -110,7 +110,7 @@ export const textTranslations = {
 
 	en: {
 		hero_text: "Logan BOVET",
-		hero_description: `Dynamic and results-driven, I have a proven track record in IT projects management and team leadership.`,
+		hero_description: `Driving impactful IT services through innovation, strategic management, and operational excellence.`,
 		back_to_all_posts: "Back to all posts",
 		updated: "Updated",
 		share_this_article: "Share this article",
@@ -158,7 +158,7 @@ export const textTranslations = {
 	fr: {
 		hero_text: "Logan BOVET",
 		hero_description:
-			"Dynamique et orienté vers les résultats, j'ai une expérience avérée dans la gestion de projets IT et d'équipes.",
+			"Fournir des services informatiques performants grâce à l'innovation, au management stratégique et à l'excellence opérationnelle.",
 		back_to_all_posts: "Retour à tous les articles",
 		updated: "Mis à jour",
 		share_this_article: "Partager cet article",

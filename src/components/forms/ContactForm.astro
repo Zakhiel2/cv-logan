@@ -14,15 +14,25 @@ const t = useTranslations(currLocale);
 <form class="space-y-8">
 	<InputWrapper>
 		<Label for="name">{t("form_name")}</Label>
-		<Input name="name" type="text" />
+		<Input name="name" type="text" id="name" />
 	</InputWrapper>
 	<InputWrapper>
 		<Label for="email">{t("form_email")}</Label>
-		<Input required name="email" type="email" />
+		<Input required name="email" type="email" id="email"/>
 	</InputWrapper>
+<!--	
+	<InputWrapper>
+		<Label for="reason">Reason</Label>
+		<select name="reason" id="reason" required class="border-input bg-base-100 dark:bg-base-800 ring-offset-background flex h-10 w-full rounded-md border px-3 py-2 text-base md:text-sm focus:border-primary border-2 transition-colors focus:ring-0 focus:outline-hidden file:text-foreground file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:cursor-not-allowed disabled:opacity-50 peer placeholder:text-muted-foreground">
+			<option value="" disabled selected>Choix 1</option>
+			<option value="recrutement">Choix 2</option>
+			<option value="information">Choix 3</option>
+		</select>  
+	</InputWrapper> 
+-->
 	<InputWrapper>
 		<Label for="message">{t("form_message")}</Label>
-		<Textarea name="message" required rows="4" />
+		<Textarea name="message" required rows="4" id="message" />
 	</InputWrapper>
 	<Button type="submit" class="w-full">{t("form_send")}</Button>
 </form>

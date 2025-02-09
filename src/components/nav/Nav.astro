@@ -1,5 +1,6 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
+import { useTranslations } from "@js/translationUtils";
 
 // components
 import NavLink from "@components/nav/NavLink.astro";
@@ -18,6 +19,7 @@ import { getTranslatedData } from "@js/translationUtils";
 // data
 const currLocale = getLocaleFromUrl(Astro.url);
 const navData = getTranslatedData("navData", currLocale);
+const t = useTranslations(currLocale);
 import { locales } from "@config/siteSettings.json";
 // console.log(JSON.stringify(navData, null, 2));
 ---
@@ -63,8 +65,8 @@ import { locales } from "@config/siteSettings.json";
 							<!-- don't forget to also update the button in MobileNav.astro! -->
 							<Button
 								variant="primary"
-								href="https://cosmicthemes.com/themes/voyager"
-								class="px-4 py-2 whitespace-nowrap">Get Voyager</Button
+								href={t("link_cv")} download target="_blank"
+								class="px-4 py-2 whitespace-nowrap">{t("download_cv")}</Button
 							>
 
 							<ThemeToggle class="" />
