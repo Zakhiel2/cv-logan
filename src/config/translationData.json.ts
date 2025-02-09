@@ -68,6 +68,7 @@ export const textTranslations = {
 		updated: "Aktualisiert",
 		share_this_article: "Teilen Sie diesen Artikel",
 		download_cv: "CV herunterladen",
+		cv: "Lebenslauf",
 		view_cv: "CV ansehen",
 		link_cv: "/documents/de/CV_BOVET_Logan_DE.pdf",
 		contact_me: "Kontaktieren Sie mich",
@@ -105,17 +106,28 @@ export const textTranslations = {
 		aboutme_3_description: "Verwaltung der Netzwerk-Infrastruktur, Sicherstellung von Sicherheit und Stabilität durch proaktive Wartung und Planung.",
 		aboutme_4: "Kommunikation",
 		aboutme_4_description: "Organisation von wirkungsvollen Schulungen und Vertretung des Unternehmens bei Webinaren und Branchenveranstaltungen.",
+
+		site_policy: "Datenschutzerklärung",
+		site_copyright: "Alle Rechte vorbehalten",
+		site_terms: "Nutzungsbedingungen",
+
+		footer_navigation: "Navigation",
+		footer_contact: "Kontakt",
+		footer_projects: "Projekte",
+		footer_blog: "Blog",
+		footer_resume: "Lebenslauf",
 	},
 
 
 	en: {
 		hero_text: "Logan BOVET",
-		hero_description: `Driving impactful IT services through innovation, strategic management, and operational excellence.`,
+		hero_description: `Driving impactful IT services through innovation, strategic management and operational excellence.`,
 		back_to_all_posts: "Back to all posts",
 		updated: "Updated",
 		share_this_article: "Share this article",
 		download_cv: "Download CV",
 		view_cv: "View CV",
+		cv: "Resume",
 		link_cv: "/documents/CV_BOVET_Logan_EN.pdf",
 		contact_me: "Contact Me",
 
@@ -152,6 +164,16 @@ export const textTranslations = {
 		aboutme_3_description: "Managing network infrastructure, ensuring security and stability through proactive maintenance and planning.",
 		aboutme_4: "Communication",
 		aboutme_4_description: "Organizing impactful training sessions and representing the company through webinars and industry events.",
+
+		site_policy: "Privacy Policy",
+		site_copyright: "All rights reserved",
+		site_terms: "Terms of Use",
+
+		footer_navigation: "Navigation",
+		footer_contact: "Contact",
+		footer_projects: "Projects",
+		footer_blog: "Blog",
+		footer_resume: "Resume",
 	},
 
 	
@@ -164,6 +186,7 @@ export const textTranslations = {
 		share_this_article: "Partager cet article",
 		download_cv: "Télecharger CV",
 		view_cv: "Voir CV",
+		cv: "CV",
 		link_cv: "/documents/fr/CV_BOVET_Logan_FR.pdf",
 		contact_me: "Me Contacter",
 
@@ -200,6 +223,16 @@ export const textTranslations = {
 		aboutme_3_description: "Gérer l'infrastructure réseau, assurer la sécurité et la stabilité grâce à une maintenance proactive et une planification minutieuse.",
 		aboutme_4: "Communication",
 		aboutme_4_description: "Organiser des sessions de formation impactantes et représenter l'entreprise lors de webinaires et événements professionnels.",
+
+		site_policy: "Politique de confidentialité",
+		site_copyright: "Tous droits réservés",
+		site_terms: "Conditions d'utilisation",
+
+		footer_navigation: "Navigation",
+		footer_contact: "Contact",
+		footer_projects: "Projets",
+		footer_blog: "Blog",
+		footer_resume: "CV",
 	},
 } as const;
 

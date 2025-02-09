@@ -1,5 +1,6 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
+import { useTranslations } from "@js/translationUtils";
 import { Icon } from "astro-icon/components";
 
 // components
@@ -9,6 +10,7 @@ import Button from "@components/button/Button.astro";
 import ThemeToggle from "@components/theme-toggle/ThemeToggle.astro";
 import LanguageSelect from "@components/language-select/MobileLanguageSelect.astro";
 import SiteLogo from "@components/site-logo/SiteLogo.astro";
+import Linkedin from "@components/linkedin/Linkedin.astro";
 
 // utils
 import { getLocaleFromUrl } from "@js/localeUtils";
@@ -17,6 +19,7 @@ import { getTranslatedData } from "@js/translationUtils";
 // data
 const currLocale = getLocaleFromUrl(Astro.url);
 const navData = getTranslatedData("navData", currLocale);
+const t = useTranslations(currLocale);
 import { locales } from "@config/siteSettings.json";
 // console.log(JSON.stringify(navData, null, 2));
 ---
@@ -68,7 +71,7 @@ import { locales } from "@config/siteSettings.json";
 
 			<!-- nav items -->
 			<nav>
-				<ul class="mt-4 flex flex-col gap-2 text-xl">
+				<ul class="mt-4 flex flex-col gap-2 text-lg">
 					{
 						// if dropdown exists, setup the dropdown, otherwise it is just a link
 						navData.map((navItem) =>
@@ -101,14 +104,23 @@ import { locales } from "@config/siteSettings.json";
 				<!-- <hr class="mx-2 mb-2 border-base-300 dark:border-base-600/60" /> -->
 				<div class="-mr-1 flex items-start justify-between">
 					<ThemeToggle />
+
 					{locales.length > 1 && <LanguageSelect />}
 				</div>
-				<!-- don't forget to also update the button in Nav.astro! -->
-				<Button
-					variant="primary"
-					href="https://cosmicthemes.com/themes/voyager"
-					class="w-full whitespace-nowrap">Get Voyager</Button
-				>
+				<div class="flex gap-2 w-full">
+					<Button
+						variant="primary"
+						href={t("link_cv")} download="CV_BOVET_Logan" target="_blank"
+						class="w-2/4 whitespace-nowrap text-base">{t("cv")}
+						<Icon name="tabler/download" aria-hidden="true" class="size-5 ml-2 mb-0.5" />
+					</Button>
+					<Button
+						variant="secondary"
+						href="https://www.linkedin.com/in/logan-bovet/" target="_blank"
+						class="w-2/4 whitespace-nowrap text-base">{t("contact_linkedin")}
+						<Icon name="tabler/brand-linkedin" aria-hidden="true" class="size-5 ml-2 mb-0.5" />
+					</Button>
+				</div>
 			</div>
 		</div>
 	</dialog>

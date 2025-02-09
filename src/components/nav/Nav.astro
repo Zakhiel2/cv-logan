@@ -21,6 +21,7 @@ const currLocale = getLocaleFromUrl(Astro.url);
 const navData = getTranslatedData("navData", currLocale);
 const t = useTranslations(currLocale);
 import { locales } from "@config/siteSettings.json";
+import Linkedin from "@components/linkedin/Linkedin.astro";
 // console.log(JSON.stringify(navData, null, 2));
 ---
 
@@ -68,7 +69,7 @@ import { locales } from "@config/siteSettings.json";
 								href={t("link_cv")} download target="_blank"
 								class="px-4 py-2 whitespace-nowrap">{t("download_cv")}</Button
 							>
-
+							<Linkedin />
 							<ThemeToggle class="" />
 
 							{locales.length > 1 && <LanguageSelect class="" />}

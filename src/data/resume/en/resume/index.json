@@ -1,627 +1,626 @@
 {
-	"diplomas": [
-		{
-			"title": "Software Solutions and Applications",
-			"school": "BTEC Higher Nationals",
-			"year": 2017
-		},
-		{
-			"title": "Management Information Systems",
-			"school": "BTEC Nationals",
-			"year": 2014
-		}
-	],
-	"certifications": [
-		{
-			"title": "Google Project Management",
-			"year": 2024,
-			"link": "https://www.coursera.org/account/accomplishments/specialization/6PENOMVT1MLT"
-		}
-	],
-	"experience": [
-		{
-			"title": "IT Support & Infrastructure Manager",
-			"company": "Watsoft",
-			"companyImage": "./index/experience/3/companyImage.png",
-			"companyLink": "https://www.watsoft.com/",
-			"dates": "2024 - Present",
-			"location": "Pessac, France",
-			"responsibilities": [
-				"Lead technical support, infrastructure, and pre-sales teams, optimizing KPIs, processes, resource planning, and customer satisfaction.",
-				"Deliver pre-sales and post-sales support, resolving incidents, collaborating with international vendors, and conducting technical demonstrations of cataloged products.",
-				"Manage the internal network, oversee infrastructure projects, IT asset maintenance, data security, and proactive or corrective interventions.",
-				"Direct internal and external training initiatives, including needs analysis, Qualiopi-certified sessions, and consulting services.",
-				"Contribute to brand representation through webinars, social media, and professional events."
-			]
-		},
-		{
-			"title": "Software & Hardware Support",
-			"company": "IPM France",
-			"companyImage": "./index/experience/2/companyImage.png",
-			"companyLink": "https://www.ipmfrance.fr/",
-			"dates": "2021 - 2024",
-			"location": "Romans-sur-Isère, France",
-			"responsibilities": [
-				"Supported key accounts, managed kiosks and payment terminals, and organized partner interventions.",
-				"Trained clients remotely/on-site and assisted with after-sales service, including IT component repairs.",
-				"Managed customer/provider disputes, defined resolution plans, and updated maintenance procedures.",
-				"Improved the GLPI ticketing system and supported quality management in line with ISO 9001 standards."
-			]
-		},
-		{
-			"title": "L2+ Software Support",
-			"company": "ProGmag",
-			"companyImage": "./index/experience/1/companyImage.png",
-			"companyLink": "https://www.progmag.com/",
-			"dates": "2019 - 2021",
-			"location": "Beaumont-lès-Valence, France",
-			"responsibilities": [
-				"Provided IT support, troubleshooting issues across systems, networks, and applications, including urgent requests.",
-				"Installed, updated, and maintained IT equipment, software, and internal tools.",
-				"Trained clients remotely/on-site and managed non-contractual services like database cleaning.",
-				"Led the support team in the manager's absence, monitoring KPIs and ensuring process compliance."
-			]
-		}
-	],
-	"hardSkills": [
-		{
-			"skill": "IT Maintenance",
-			"percentage": 100
-		},
-		{
-			"skill": "Project Management",
-			"percentage": 90
-		},
-		{
-			"skill": "Hardware",
-			"percentage": 80
-		},
-		{
-			"skill": "Network & Security",
-			"percentage": 70
-		}
-	],
-	"softSkills": [
-		{
-			"skill": "Adaptability",
-			"icon": "🧷"
-		},
-		{
-			"skill": "Communication",
-			"icon": "🗣️"
-		},
-		{
-			"skill": "Leadership",
-			"icon": "👑"
-		},
-		{
-			"skill": "Organization",
-			"icon": "🗂️"
-		},
-		{
-			"skill": "Problem Solving",
-			"icon": "🧩"
-		},
-		{
-			"skill": "Reliability",
-			"icon": "🤝🏼"
-		}	
-	],
-	"languages": [
-		{
-			"language": "French",
-			"level": 10
-		},
-		{
-			"language": "English",
-			"level": 8
-		}
-	],
-	"tools": [
-		{
-		  "name": "3CX",
-		  "category": "Comms",
-		  "image": "./index/tools/0/image.svg",
-		  "link": "https://www.3cx.com",
-		  "description": "VoIP phone system with web-based management interface."
-		},
-		{
-		  "name": "Alfresco",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/1/image.svg",
-		  "link": "https://www.alfresco.com",
-		  "description": "Open-source enterprise content management and document management system."
-		},
-		{
-		  "name": "Anydesk",
-		  "category": "Support",
-		  "image": "./index/tools/2/image.svg",
-		  "link": "https://www.anydesk.com",
-		  "description": "Remote desktop software for quick and easy connections."
-		},
-		{
-		  "name": "Astro",
-		  "category": "Dev",
-		  "image": "./index/tools/3/image.svg",
-		  "link": "https://astro.build",
-		  "description": "JavaScript library for creating astrology-based applications."
-		},
-		{
-		  "name": "AWS",
-		  "category": "Cloud & DB",
-		  "image": "./index/tools/4/image.svg",
-		  "link": "https://aws.amazon.com",
-		  "description": "Cloud computing platform offering scalable infrastructure services."
-		},
-		{
-		  "name": "Bitdefender",
-		  "category": "Security",
-		  "image": "./index/tools/5/image.svg",
-		  "link": "https://www.bitdefender.com",
-		  "description": "Advanced antivirus and cybersecurity protection software."
-		},
-		{
-		  "name": "ChatGPT",
-		  "category": "Automation",
-		  "image": "./index/tools/6/image.svg",
-		  "link": "https://chat.openai.com",
-		  "description": "AI language model for conversations and text generation."
-		},
-		{
-		  "name": "Confluence",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/7/image.svg",
-		  "link": "https://www.atlassian.com/software/confluence",
-		  "description": "Collaboration software for creating and sharing documentation."
-		},
-		{
-		  "name": "Discord",
-		  "category": "Comms",
-		  "image": "./index/tools/8/image.svg",
-		  "link": "https://discord.com",
-		  "description": "Voice, video, and text chat platform for communities."
-		},
-		{
-		  "name": "Docker",
-		  "category": "Dev",
-		  "image": "./index/tools/9/image.svg",
-		  "link": "https://www.docker.com",
-		  "description": "Platform for developing, shipping, and running applications."
-		},
-		{
-		  "name": "Evernote",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/10/image.svg",
-		  "link": "https://www.evernote.com",
-		  "description": "Note-taking app with organization and synchronization features."
-		},
-		{
-		  "name": "Figma",
-		  "category": "Design",
-		  "image": "./index/tools/11/image.svg",
-		  "link": "https://www.figma.com",
-		  "description": "Collaborative design tool for UI/UX prototyping and design."
-		},
-		{
-		  "name": "Freshdesk",
-		  "category": "Support",
-		  "image": "./index/tools/12/image.svg",
-		  "link": "https://freshdesk.com",
-		  "description": "Cloud-based customer support software for ticket management."
-		},
-		{
-		  "name": "Github",
-		  "category": "Dev",
-		  "image": "./index/tools/13/image.svg",
-		  "link": "https://github.com",
-		  "description": "Code hosting platform for version control and collaboration."
-		},
-		{
-		  "name": "Gitlab",
-		  "category": "Dev",
-		  "image": "./index/tools/14/image.svg",
-		  "link": "https://gitlab.com",
-		  "description": "DevOps platform for software development and lifecycle management."
-		},
-		{
-		  "name": "GLPI",
-		  "category": "Support",
-		  "image": "./index/tools/15/image.svg",
-		  "link": "https://glpi-project.org",
-		  "description": "IT asset and service management software for enterprises."
-		},
-		{
-		  "name": "Google Suite",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/16/image.svg",
-		  "link": "https://workspace.google.com",
-		  "description": "Cloud-based productivity tools for business and collaboration."
-		},
-		{
-		  "name": "HaloPSA",
-		  "category": "Support",
-		  "image": "./index/tools/17/image.svg",
-		  "link": "https://www.halopsa.com",
-		  "description": "Professional services automation software for IT businesses."
-		},
-		{
-		  "name": "Heimdal",
-		  "category": "Security",
-		  "image": "./index/tools/18/image.svg",
-		  "link": "https://heimdalsecurity.com",
-		  "description": "Advanced security software protecting from online threats."
-		},
-		{
-		  "name": "Hubspot",
-		  "category": "CRM & Marketing",
-		  "image": "./index/tools/19/image.svg",
-		  "link": "https://www.hubspot.com",
-		  "description": "CRM platform offering marketing, sales, and support tools."
-		},
-		{
-		  "name": "Illustrator",
-		  "category": "Design",
-		  "image": "./index/tools/20/image.svg",
-		  "link": "https://www.adobe.com/products/illustrator.html",
-		  "description": "Graphic design software for creating vector-based illustrations."
-		},
-		{
-		  "name": "Infomaniak",
-		  "category": "Cloud & DB",
-		  "image": "./index/tools/21/image.svg",
-		  "link": "https://www.infomaniak.com",
-		  "description": "Swiss web hosting, cloud, and email service provider."
-		},
-		{
-		  "name": "IONOS",
-		  "category": "Cloud & DB",
-		  "image": "./index/tools/22/image.svg",
-		  "link": "https://www.ionos.com",
-		  "description": "Cloud and web hosting services with management tools."
-		},
-		{
-		  "name": "ISL Online",
-		  "category": "Support",
-		  "image": "./index/tools/23/image.svg",
-		  "link": "https://www.islonline.com",
-		  "description": "Remote desktop and support software with secure connections."
-		},
-		{
-		  "name": "ITGlue",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/24/image.svg",
-		  "link": "https://www.itglue.com",
-		  "description": "IT documentation management platform for MSPs and teams."
-		},
-		{
-		  "name": "Jira",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/25/image.svg",
-		  "link": "https://www.atlassian.com/software/jira",
-		  "description": "Issue and project management software for agile teams."
-		},
-		{
-		  "name": "Kaspersky",
-		  "category": "Security",
-		  "image": "./index/tools/26/image.svg",
-		  "link": "https://www.kaspersky.com",
-		  "description": "Antivirus software protecting against malware and cybersecurity threats."
-		},
-		{
-		  "name": "Keystatic",
-		  "category": "Dev",
-		  "image": "./index/tools/27/image.svg",
-		  "link": "https://keystatic.com",
-		  "description": "Headless CMS for managing content in static websites."
-		},
-		{
-		  "name": "Mailchimp",
-		  "category": "CRM & Marketing",
-		  "image": "./index/tools/28/image.svg",
-		  "link": "https://mailchimp.com",
-		  "description": "Email marketing platform for campaign creation and automation."
-		},
-		{
-		  "name": "Malwarebytes",
-		  "category": "Security",
-		  "image": "./index/tools/29/image.svg",
-		  "link": "https://www.malwarebytes.com",
-		  "description": "Anti-malware software for removing and preventing cyber threats."
-		},
-		{
-		  "name": "MediaWiki",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/30/image.svg",
-		  "link": "https://www.mediawiki.org",
-		  "description": "Open-source software for creating wikis and collaborative knowledge bases."
-		},
-		{
-		  "name": "Microsoft 365",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/31/image.svg",
-		  "link": "https://www.microsoft.com/en-us/microsoft-365",
-		  "description": "Cloud-based productivity suite with email and office tools."
-		},
-		{
-		  "name": "MongoDB",
-		  "category": "Cloud & DB",
-		  "image": "./index/tools/32/image.svg",
-		  "link": "https://www.mongodb.com",
-		  "description": "NoSQL database for storing data in flexible, scalable formats."
-		},
-		{
-		  "name": "MySQL",
-		  "category": "Cloud & DB",
-		  "image": "./index/tools/33/image.svg",
-		  "link": "https://www.mysql.com",
-		  "description": "Relational database management system for structured data storage."
-		},
-		{
-		  "name": "N8N",
-		  "category": "Automation",
-		  "image": "./index/tools/34/image.svg",
-		  "link": "https://n8n.io",
-		  "description": "Open-source workflow automation platform with integrations."
-		},
-		{
-		  "name": "Nextloud",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/35/image.svg",
-		  "link": "https://nextcloud.com",
-		  "description": "Open-source file synchronization and collaboration platform."
-		},
-		{
-		  "name": "NodeJS",
-		  "category": "Dev",
-		  "image": "./index/tools/36/image.svg",
-		  "link": "https://nodejs.org",
-		  "description": "JavaScript runtime environment for server-side application development."
-		},
-		{
-		  "name": "Octiga",
-		  "category": "Security",
-		  "image": "./index/tools/37/image.svg",
-		  "link": "https://www.octiga.com",
-		  "description": "Data analytics and automation platform for business intelligence."
-		},
-		{
-		  "name": "Office Suite",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/38/image.svg",
-		  "link": "https://www.microsoft.com/en-us/microsoft-365",
-		  "description": "Productivity tools for creating documents, spreadsheets, and presentations."
-		},
-		{
-		  "name": "OTRS ITSM",
-		  "category": "Support",
-		  "image": "./index/tools/39/image.svg",
-		  "link": "https://otrs.com",
-		  "description": "IT service management software for handling IT requests."
-		},
-		{
-		  "name": "OVH Cloud",
-		  "category": "Cloud & DB",
-		  "image": "./index/tools/40/image.svg",
-		  "link": "https://www.ovh.com",
-		  "description": "Cloud infrastructure and hosting services for businesses."
-		},
-		{
-		  "name": "Parsec",
-		  "category": "Support",
-		  "image": "./index/tools/41/image.svg",
-		  "link": "https://www.parsec.app",
-		  "description": "High-performance remote desktop software for gaming and work."
-		},
-		{
-		  "name": "Photoshop",
-		  "category": "Design",
-		  "image": "./index/tools/42/image.svg",
-		  "link": "https://www.adobe.com/products/photoshop.html",
-		  "description": "Image editing software for professional photography and design."
-		},
-		{
-		  "name": "PostgreSQL",
-		  "category": "Cloud & DB",
-		  "image": "./index/tools/43/image.svg",
-		  "link": "https://www.postgresql.org",
-		  "description": "Open-source relational database system supporting complex queries."
-		},
-		{
-		  "name": "Premiere Pro",
-		  "category": "Design",
-		  "image": "./index/tools/44/image.svg",
-		  "link": "https://www.adobe.com/products/premiere.html",
-		  "description": "Video editing software for professional video production."
-		},
-		{
-		  "name": "RADAAR",
-		  "category": "CRM & Marketing",
-		  "image": "./index/tools/45/image.svg",
-		  "link": "https://www.radaar.io",
-		  "description": "Social media management platform for businesses and teams."
-		},
-		{
-		  "name": "React",
-		  "category": "Dev",
-		  "image": "./index/tools/46/image.svg",
-		  "link": "https://reactjs.org",
-		  "description": "JavaScript library for building user interfaces and web apps."
-		},
-		{
-		  "name": "Ringover",
-		  "category": "Comms",
-		  "image": "./index/tools/47/image.svg",
-		  "link": "https://www.ringover.com",
-		  "description": "Cloud-based business phone system with collaboration features."
-		},
-		{
-		  "name": "Shopify",
-		  "category": "E-commerce",
-		  "image": "./index/tools/48/image.svg",
-		  "link": "https://www.shopify.com",
-		  "description": "E-commerce platform for creating online stores and businesses."
-		},
-		{
-		  "name": "Slack",
-		  "category": "Comms",
-		  "image": "./index/tools/49/image.svg",
-		  "link": "https://slack.com",
-		  "description": "Team collaboration and communication software with channels."
-		},
-		{
-		  "name": "Stripe",
-		  "category": "E-commerce",
-		  "image": "./index/tools/50/image.svg",
-		  "link": "https://stripe.com",
-		  "description": "Online payment processing platform for businesses and developers."
-		},
-		{
-		  "name": "SurveyMonkey",
-		  "category": "CRM & Marketing",
-		  "image": "./index/tools/51/image.svg",
-		  "link": "https://www.surveymonkey.com",
-		  "description": "Survey tool for creating and analyzing online questionnaires."
-		},
-		{
-		  "name": "Svelte",
-		  "category": "Dev",
-		  "image": "./index/tools/52/image.svg",
-		  "link": "https://svelte.dev",
-		  "description": "JavaScript framework for building fast, reactive web apps."
-		},
-		{
-		  "name": "Sylob",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/53/image.svg",
-		  "link": "https://www.sylob.com",
-		  "description": "ERP software for managing manufacturing businesses and operations."
-		},
-		{
-		  "name": "Tailwing CSS",
-		  "category": "Dev",
-		  "image": "./index/tools/54/image.svg",
-		  "link": "https://tailwindcss.com",
-		  "description": "Utility-first CSS framework for building responsive designs."
-		},
-		{
-		  "name": "Teams",
-		  "category": "Comms",
-		  "image": "./index/tools/55/image.svg",
-		  "link": "https://www.microsoft.com/en-us/microsoft-teams",
-		  "description": "Collaboration platform for meetings, messaging, and file sharing."
-		},
-		{
-		  "name": "Teamviewer",
-		  "category": "Support",
-		  "image": "./index/tools/56/image.svg",
-		  "link": "https://www.teamviewer.com",
-		  "description": "Remote access and support software for devices and systems."
-		},
-		{
-		  "name": "TIMIFY",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/57/image.svg",
-		  "link": "https://www.timify.com",
-		  "description": "Online scheduling and appointment management platform for businesses."
-		},
-		{
-		  "name": "Trello",
-		  "category": "Project & Docs",
-		  "image": "./index/tools/58/image.svg",
-		  "link": "https://trello.com",
-		  "description": "Project management tool using boards and cards for tasks."
-		},
-		{
-		  "name": "Typescript",
-		  "category": "Dev",
-		  "image": "./index/tools/59/image.svg",
-		  "link": "https://www.typescriptlang.org",
-		  "description": "Superset of JavaScript adding static types and features."
-		},
-		{
-		  "name": "VEGAS Pro",
-		  "category": "Design",
-		  "image": "./index/tools/60/image.svg",
-		  "link": "https://www.vegascreativesoftware.com",
-		  "description": "Professional video editing software for editing and producing media."
-		},
-		{
-		  "name": "Vercel",
-		  "category": "Cloud & DB",
-		  "image": "./index/tools/61/image.svg",
-		  "link": "https://vercel.com",
-		  "description": "Platform for deploying and hosting web applications with ease."
-		},
-		{
-		  "name": "Visual Studio Code",
-		  "category": "Dev",
-		  "image": "./index/tools/62/image.svg",
-		  "link": "https://code.visualstudio.com",
-		  "description": "Code editor with debugging, extensions, and version control."
-		},
-		{
-		  "name": "Webstorm",
-		  "category": "Dev",
-		  "image": "./index/tools/63/image.svg",
-		  "link": "https://www.jetbrains.com/webstorm",
-		  "description": "IDE for JavaScript and frontend development with smart features."
-		},
-		{
-		  "name": "WikiJS",
-		  "category": "Dev",
-		  "image": "./index/tools/64/image.svg",
-		  "link": "https://wiki.js.org",
-		  "description": "Modern and powerful wiki software with a clean interface."
-		},
-		{
-		  "name": "WinDev",
-		  "category": "Dev",
-		  "image": "./index/tools/65/image.svg",
-		  "link": "https://www.windev.com",
-		  "description": "Development environment for creating desktop, mobile, and web apps."
-		},
-		{
-		  "name": "Wordpress",
-		  "category": "E-commerce",
-		  "image": "./index/tools/66/image.svg",
-		  "link": "https://wordpress.org",
-		  "description": "Content management system for building websites and blogs."
-		},
-		{
-		  "name": "Xenforo",
-		  "category": "Support",
-		  "image": "./index/tools/67/image.svg",
-		  "link": "https://xenforo.com",
-		  "description": "Forum software for creating online communities and discussions."
-		},
-		{
-		  "name": "Zammad",
-		  "category": "Support",
-		  "image": "./index/tools/68/image.svg",
-		  "link": "https://zammad.org",
-		  "description": "Open-source ticketing system for customer support and service management."
-		},
-
-		{
-		  "name": "Zapier",
-		  "category": "Automation",
-		  "image": "./index/tools/69/image.svg",
-		  "link": "https://zapier.com",
-		  "description": "Automation tool for integrating and connecting apps and workflows."
-		},
-		{
-		  "name": "Zendesk",
-		  "category": "Support",
-		  "image": "./index/tools/70/image.svg",
-		  "link": "https://www.zendesk.com",
-		  "description": "Customer service software for managing support tickets and interactions."
-		},
-		{
-		  "name": "Zoiper",
-		  "category": "Comms",
-		  "image": "./index/tools/71/image.svg",
-		  "link": "https://www.zoiper.com",
-		  "description": "VoIP softphone for making calls over the internet."
-		}
-	]
+  "diplomas": [
+    {
+      "title": "Software Solutions and Applications",
+      "school": "BTEC Higher Nationals",
+      "year": 2017
+    },
+    {
+      "title": "Management Information Systems",
+      "school": "BTEC Nationals",
+      "year": 2014
+    }
+  ],
+  "certifications": [
+    {
+      "title": "Google Project Management",
+      "year": 2024,
+      "link": "https://www.coursera.org/account/accomplishments/specialization/6PENOMVT1MLT"
+    }
+  ],
+  "experience": [
+    {
+      "title": "IT Support & Infrastructure Manager",
+      "company": "Watsoft",
+      "companyImage": "./index/experience/0/companyImage.png",
+      "companyLink": "https://www.watsoft.com/",
+      "dates": "2024 - Present",
+      "location": "Pessac, France",
+      "responsibilities": [
+        "Lead technical support, infrastructure, and pre-sales teams, optimizing KPIs, processes, resource planning, and customer satisfaction.",
+        "Deliver pre-sales and post-sales support, resolving incidents, collaborating with international vendors, and conducting technical demonstrations of cataloged products.",
+        "Manage the internal network, oversee infrastructure projects, IT asset maintenance, data security, and proactive or corrective interventions.",
+        "Direct internal and external training initiatives, including needs analysis, Qualiopi-certified sessions, and consulting services.",
+        "Contribute to brand representation through webinars, social media, and professional events."
+      ]
+    },
+    {
+      "title": "Software & Hardware Support",
+      "company": "IPM France",
+      "companyImage": "./index/experience/1/companyImage.png",
+      "companyLink": "https://www.ipmfrance.fr/",
+      "dates": "2021 - 2024",
+      "location": "Romans-sur-Isère, France",
+      "responsibilities": [
+        "Supported key accounts, managed kiosks and payment terminals, and organized partner interventions.",
+        "Trained clients remotely/on-site and assisted with after-sales service, including IT component repairs.",
+        "Managed customer/provider disputes, defined resolution plans, and updated maintenance procedures.",
+        "Improved the GLPI ticketing system and supported quality management in line with ISO 9001 standards."
+      ]
+    },
+    {
+      "title": "L2+ Software Support",
+      "company": "ProGmag",
+      "companyImage": "./index/experience/2/companyImage.png",
+      "companyLink": "https://www.progmag.com/",
+      "dates": "2019 - 2021",
+      "location": "Beaumont-lès-Valence, France",
+      "responsibilities": [
+        "Provided IT support, troubleshooting issues across systems, networks, and applications, including urgent requests.",
+        "Installed, updated, and maintained IT equipment, software, and internal tools.",
+        "Trained clients remotely/on-site and managed non-contractual services like database cleaning.",
+        "Led the support team in the manager's absence, monitoring KPIs and ensuring process compliance."
+      ]
+    }
+  ],
+  "hardSkills": [
+    {
+      "skill": "IT Maintenance",
+      "percentage": 100
+    },
+    {
+      "skill": "Project Management",
+      "percentage": 90
+    },
+    {
+      "skill": "Hardware",
+      "percentage": 80
+    },
+    {
+      "skill": "Network & Security",
+      "percentage": 70
+    }
+  ],
+  "softSkills": [
+    {
+      "skill": "Adaptability",
+      "icon": "🧷"
+    },
+    {
+      "skill": "Communication",
+      "icon": "🗣️"
+    },
+    {
+      "skill": "Leadership",
+      "icon": "👑"
+    },
+    {
+      "skill": "Organization",
+      "icon": "🗂️"
+    },
+    {
+      "skill": "Problem Solving",
+      "icon": "🧩"
+    },
+    {
+      "skill": "Reliability",
+      "icon": "🤝🏼"
+    }
+  ],
+  "languages": [
+    {
+      "language": "French",
+      "level": 10
+    },
+    {
+      "language": "English",
+      "level": 8
+    }
+  ],
+  "tools": [
+    {
+      "name": "3CX",
+      "category": "Comms",
+      "image": "./index/tools/0/image.svg",
+      "description": "VoIP phone system with web-based management interface.",
+      "link": "https://www.3cx.com"
+    },
+    {
+      "name": "Alfresco",
+      "category": "Project & Docs",
+      "image": "./index/tools/1/image.svg",
+      "description": "Open-source enterprise content management and document management system.",
+      "link": "https://www.alfresco.com"
+    },
+    {
+      "name": "Anydesk",
+      "category": "Support",
+      "image": "./index/tools/2/image.svg",
+      "description": "Remote desktop software for quick and easy connections.",
+      "link": "https://www.anydesk.com"
+    },
+    {
+      "name": "Astro",
+      "category": "Dev",
+      "image": "./index/tools/3/image.svg",
+      "description": "JavaScript library for creating astrology-based applications.",
+      "link": "https://astro.build"
+    },
+    {
+      "name": "AWS",
+      "category": "Cloud & DB",
+      "image": "./index/tools/4/image.svg",
+      "description": "Cloud computing platform offering scalable infrastructure services.",
+      "link": "https://aws.amazon.com"
+    },
+    {
+      "name": "Bitdefender",
+      "category": "Security",
+      "image": "./index/tools/5/image.svg",
+      "description": "Advanced antivirus and cybersecurity protection software.",
+      "link": "https://www.bitdefender.com"
+    },
+    {
+      "name": "ChatGPT",
+      "category": "Automation",
+      "image": "./index/tools/6/image.svg",
+      "description": "AI language model for conversations and text generation.",
+      "link": "https://chat.openai.com"
+    },
+    {
+      "name": "Confluence",
+      "category": "Project & Docs",
+      "image": "./index/tools/7/image.svg",
+      "description": "Collaboration software for creating and sharing documentation.",
+      "link": "https://www.atlassian.com/software/confluence"
+    },
+    {
+      "name": "Discord",
+      "category": "Comms",
+      "image": "./index/tools/8/image.svg",
+      "description": "Voice, video, and text chat platform for communities.",
+      "link": "https://discord.com"
+    },
+    {
+      "name": "Docker",
+      "category": "Dev",
+      "image": "./index/tools/9/image.svg",
+      "description": "Platform for developing, shipping, and running applications.",
+      "link": "https://www.docker.com"
+    },
+    {
+      "name": "Evernote",
+      "category": "Project & Docs",
+      "image": "./index/tools/10/image.svg",
+      "description": "Note-taking app with organization and synchronization features.",
+      "link": "https://www.evernote.com"
+    },
+    {
+      "name": "Figma",
+      "category": "Design",
+      "image": "./index/tools/11/image.svg",
+      "description": "Collaborative design tool for UI/UX prototyping and design.",
+      "link": "https://www.figma.com"
+    },
+    {
+      "name": "Freshdesk",
+      "category": "Support",
+      "image": "./index/tools/12/image.svg",
+      "description": "Cloud-based customer support software for ticket management.",
+      "link": "https://freshdesk.com"
+    },
+    {
+      "name": "Github",
+      "category": "Dev",
+      "image": "./index/tools/13/image.svg",
+      "description": "Code hosting platform for version control and collaboration.",
+      "link": "https://github.com"
+    },
+    {
+      "name": "Gitlab",
+      "category": "Dev",
+      "image": "./index/tools/14/image.svg",
+      "description": "DevOps platform for software development and lifecycle management.",
+      "link": "https://gitlab.com"
+    },
+    {
+      "name": "GLPI",
+      "category": "Support",
+      "image": "./index/tools/15/image.svg",
+      "description": "IT asset and service management software for enterprises.",
+      "link": "https://glpi-project.org"
+    },
+    {
+      "name": "Google Suite",
+      "category": "Project & Docs",
+      "image": "./index/tools/16/image.svg",
+      "description": "Cloud-based productivity tools for business and collaboration.",
+      "link": "https://workspace.google.com"
+    },
+    {
+      "name": "HaloPSA",
+      "category": "Support",
+      "image": "./index/tools/17/image.svg",
+      "description": "Professional services automation software for IT businesses.",
+      "link": "https://www.halopsa.com"
+    },
+    {
+      "name": "Heimdal",
+      "category": "Security",
+      "image": "./index/tools/18/image.svg",
+      "description": "Advanced security software protecting from online threats.",
+      "link": "https://heimdalsecurity.com"
+    },
+    {
+      "name": "Hubspot",
+      "category": "CRM & Marketing",
+      "image": "./index/tools/19/image.svg",
+      "description": "CRM platform offering marketing, sales, and support tools.",
+      "link": "https://www.hubspot.com"
+    },
+    {
+      "name": "Illustrator",
+      "category": "Design",
+      "image": "./index/tools/20/image.svg",
+      "description": "Graphic design software for creating vector-based illustrations.",
+      "link": "https://www.adobe.com/products/illustrator.html"
+    },
+    {
+      "name": "Infomaniak",
+      "category": "Cloud & DB",
+      "image": "./index/tools/21/image.svg",
+      "description": "Swiss web hosting, cloud, and email service provider.",
+      "link": "https://www.infomaniak.com"
+    },
+    {
+      "name": "IONOS",
+      "category": "Cloud & DB",
+      "image": "./index/tools/22/image.svg",
+      "description": "Cloud and web hosting services with management tools.",
+      "link": "https://www.ionos.com"
+    },
+    {
+      "name": "ISL Online",
+      "category": "Support",
+      "image": "./index/tools/23/image.svg",
+      "description": "Remote desktop and support software with secure connections.",
+      "link": "https://www.islonline.com"
+    },
+    {
+      "name": "ITGlue",
+      "category": "Project & Docs",
+      "image": "./index/tools/24/image.svg",
+      "description": "IT documentation management platform for MSPs and teams.",
+      "link": "https://www.itglue.com"
+    },
+    {
+      "name": "Jira",
+      "category": "Project & Docs",
+      "image": "./index/tools/25/image.svg",
+      "description": "Issue and project management software for agile teams.",
+      "link": "https://www.atlassian.com/software/jira"
+    },
+    {
+      "name": "Kaspersky",
+      "category": "Security",
+      "image": "./index/tools/26/image.svg",
+      "description": "Antivirus software protecting against malware and cybersecurity threats.",
+      "link": "https://www.kaspersky.com"
+    },
+    {
+      "name": "Keystatic",
+      "category": "Dev",
+      "image": "./index/tools/27/image.svg",
+      "description": "Headless CMS for managing content in static websites.",
+      "link": "https://keystatic.com"
+    },
+    {
+      "name": "Mailchimp",
+      "category": "CRM & Marketing",
+      "image": "./index/tools/28/image.svg",
+      "description": "Email marketing platform for campaign creation and automation.",
+      "link": "https://mailchimp.com"
+    },
+    {
+      "name": "Malwarebytes",
+      "category": "Security",
+      "image": "./index/tools/29/image.svg",
+      "description": "Anti-malware software for removing and preventing cyber threats.",
+      "link": "https://www.malwarebytes.com"
+    },
+    {
+      "name": "MediaWiki",
+      "category": "Project & Docs",
+      "image": "./index/tools/30/image.svg",
+      "description": "Open-source software for creating wikis and collaborative knowledge bases.",
+      "link": "https://www.mediawiki.org"
+    },
+    {
+      "name": "Microsoft 365",
+      "category": "Project & Docs",
+      "image": "./index/tools/31/image.svg",
+      "description": "Cloud-based productivity suite with email and office tools.",
+      "link": "https://www.microsoft.com/en-us/microsoft-365"
+    },
+    {
+      "name": "MongoDB",
+      "category": "Cloud & DB",
+      "image": "./index/tools/32/image.svg",
+      "description": "NoSQL database for storing data in flexible, scalable formats.",
+      "link": "https://www.mongodb.com"
+    },
+    {
+      "name": "MySQL",
+      "category": "Cloud & DB",
+      "image": "./index/tools/33/image.svg",
+      "description": "Relational database management system for structured data storage.",
+      "link": "https://www.mysql.com"
+    },
+    {
+      "name": "N8N",
+      "category": "Automation",
+      "image": "./index/tools/34/image.svg",
+      "description": "Open-source workflow automation platform with integrations.",
+      "link": "https://n8n.io"
+    },
+    {
+      "name": "Nextloud",
+      "category": "Project & Docs",
+      "image": "./index/tools/35/image.svg",
+      "description": "Open-source file synchronization and collaboration platform.",
+      "link": "https://nextcloud.com"
+    },
+    {
+      "name": "NodeJS",
+      "category": "Dev",
+      "image": "./index/tools/36/image.svg",
+      "description": "JavaScript runtime environment for server-side application development.",
+      "link": "https://nodejs.org"
+    },
+    {
+      "name": "Octiga",
+      "category": "Security",
+      "image": "./index/tools/37/image.svg",
+      "description": "Data analytics and automation platform for business intelligence.",
+      "link": "https://www.octiga.com"
+    },
+    {
+      "name": "Office Suite",
+      "category": "Project & Docs",
+      "image": "./index/tools/38/image.svg",
+      "description": "Productivity tools for creating documents, spreadsheets, and presentations.",
+      "link": "https://www.microsoft.com/en-us/microsoft-365"
+    },
+    {
+      "name": "OTRS ITSM",
+      "category": "Support",
+      "image": "./index/tools/39/image.svg",
+      "description": "IT service management software for handling IT requests.",
+      "link": "https://otrs.com"
+    },
+    {
+      "name": "OVH Cloud",
+      "category": "Cloud & DB",
+      "image": "./index/tools/40/image.svg",
+      "description": "Cloud infrastructure and hosting services for businesses.",
+      "link": "https://www.ovh.com"
+    },
+    {
+      "name": "Parsec",
+      "category": "Support",
+      "image": "./index/tools/41/image.svg",
+      "description": "High-performance remote desktop software for gaming and work.",
+      "link": "https://www.parsec.app"
+    },
+    {
+      "name": "Photoshop",
+      "category": "Design",
+      "image": "./index/tools/42/image.svg",
+      "description": "Image editing software for professional photography and design.",
+      "link": "https://www.adobe.com/products/photoshop.html"
+    },
+    {
+      "name": "PostgreSQL",
+      "category": "Cloud & DB",
+      "image": "./index/tools/43/image.svg",
+      "description": "Open-source relational database system supporting complex queries.",
+      "link": "https://www.postgresql.org"
+    },
+    {
+      "name": "Premiere Pro",
+      "category": "Design",
+      "image": "./index/tools/44/image.svg",
+      "description": "Video editing software for professional video production.",
+      "link": "https://www.adobe.com/products/premiere.html"
+    },
+    {
+      "name": "RADAAR",
+      "category": "CRM & Marketing",
+      "image": "./index/tools/45/image.svg",
+      "description": "Social media management platform for businesses and teams.",
+      "link": "https://www.radaar.io"
+    },
+    {
+      "name": "React",
+      "category": "Dev",
+      "image": "./index/tools/46/image.svg",
+      "description": "JavaScript library for building user interfaces and web apps.",
+      "link": "https://reactjs.org"
+    },
+    {
+      "name": "Ringover",
+      "category": "Comms",
+      "image": "./index/tools/47/image.svg",
+      "description": "Cloud-based business phone system with collaboration features.",
+      "link": "https://www.ringover.com"
+    },
+    {
+      "name": "Shopify",
+      "category": "E-commerce",
+      "image": "./index/tools/48/image.svg",
+      "description": "E-commerce platform for creating online stores and businesses.",
+      "link": "https://www.shopify.com"
+    },
+    {
+      "name": "Slack",
+      "category": "Comms",
+      "image": "./index/tools/49/image.svg",
+      "description": "Team collaboration and communication software with channels.",
+      "link": "https://slack.com"
+    },
+    {
+      "name": "Stripe",
+      "category": "E-commerce",
+      "image": "./index/tools/50/image.svg",
+      "description": "Online payment processing platform for businesses and developers.",
+      "link": "https://stripe.com"
+    },
+    {
+      "name": "SurveyMonkey",
+      "category": "CRM & Marketing",
+      "image": "./index/tools/51/image.svg",
+      "description": "Survey tool for creating and analyzing online questionnaires.",
+      "link": "https://www.surveymonkey.com"
+    },
+    {
+      "name": "Svelte",
+      "category": "Dev",
+      "image": "./index/tools/52/image.svg",
+      "description": "JavaScript framework for building fast, reactive web apps.",
+      "link": "https://svelte.dev"
+    },
+    {
+      "name": "Sylob",
+      "category": "Project & Docs",
+      "image": "./index/tools/53/image.svg",
+      "description": "ERP software for managing manufacturing businesses and operations.",
+      "link": "https://www.sylob.com"
+    },
+    {
+      "name": "Tailwing CSS",
+      "category": "Dev",
+      "image": "./index/tools/54/image.svg",
+      "description": "Utility-first CSS framework for building responsive designs.",
+      "link": "https://tailwindcss.com"
+    },
+    {
+      "name": "Teams",
+      "category": "Comms",
+      "image": "./index/tools/55/image.svg",
+      "description": "Collaboration platform for meetings, messaging, and file sharing.",
+      "link": "https://www.microsoft.com/en-us/microsoft-teams"
+    },
+    {
+      "name": "Teamviewer",
+      "category": "Support",
+      "image": "./index/tools/56/image.svg",
+      "description": "Remote access and support software for devices and systems.",
+      "link": "https://www.teamviewer.com"
+    },
+    {
+      "name": "TIMIFY",
+      "category": "Project & Docs",
+      "image": "./index/tools/57/image.svg",
+      "description": "Online scheduling and appointment management platform for businesses.",
+      "link": "https://www.timify.com"
+    },
+    {
+      "name": "Trello",
+      "category": "Project & Docs",
+      "image": "./index/tools/58/image.svg",
+      "description": "Project management tool using boards and cards for tasks.",
+      "link": "https://trello.com"
+    },
+    {
+      "name": "Typescript",
+      "category": "Dev",
+      "image": "./index/tools/59/image.svg",
+      "description": "Superset of JavaScript adding static types and features.",
+      "link": "https://www.typescriptlang.org"
+    },
+    {
+      "name": "VEGAS Pro",
+      "category": "Design",
+      "image": "./index/tools/60/image.svg",
+      "description": "Professional video editing software for editing and producing media.",
+      "link": "https://www.vegascreativesoftware.com"
+    },
+    {
+      "name": "Vercel",
+      "category": "Cloud & DB",
+      "image": "./index/tools/61/image.svg",
+      "description": "Platform for deploying and hosting web applications with ease.",
+      "link": "https://vercel.com"
+    },
+    {
+      "name": "Visual Studio Code",
+      "category": "Dev",
+      "image": "./index/tools/62/image.svg",
+      "description": "Code editor with debugging, extensions, and version control.",
+      "link": "https://code.visualstudio.com"
+    },
+    {
+      "name": "Webstorm",
+      "category": "Dev",
+      "image": "./index/tools/63/image.svg",
+      "description": "IDE for JavaScript and frontend development with smart features.",
+      "link": "https://www.jetbrains.com/webstorm"
+    },
+    {
+      "name": "WikiJS",
+      "category": "Dev",
+      "image": "./index/tools/64/image.svg",
+      "description": "Modern and powerful wiki software with a clean interface.",
+      "link": "https://wiki.js.org"
+    },
+    {
+      "name": "WinDev",
+      "category": "Dev",
+      "image": "./index/tools/65/image.svg",
+      "description": "Development environment for creating desktop, mobile, and web apps.",
+      "link": "https://www.windev.com"
+    },
+    {
+      "name": "Wordpress",
+      "category": "E-commerce",
+      "image": "./index/tools/66/image.svg",
+      "description": "Content management system for building websites and blogs.",
+      "link": "https://wordpress.org"
+    },
+    {
+      "name": "Xenforo",
+      "category": "Support",
+      "image": "./index/tools/67/image.svg",
+      "description": "Forum software for creating online communities and discussions.",
+      "link": "https://xenforo.com"
+    },
+    {
+      "name": "Zammad",
+      "category": "Support",
+      "image": "./index/tools/68/image.svg",
+      "description": "Open-source ticketing system for customer support and service management.",
+      "link": "https://zammad.org"
+    },
+    {
+      "name": "Zapier",
+      "category": "Automation",
+      "image": "./index/tools/69/image.svg",
+      "description": "Automation tool for integrating and connecting apps and workflows.",
+      "link": "https://zapier.com"
+    },
+    {
+      "name": "Zendesk",
+      "category": "Support",
+      "image": "./index/tools/70/image.svg",
+      "description": "Customer service software for managing support tickets and interactions.",
+      "link": "https://www.zendesk.com"
+    },
+    {
+      "name": "Zoiper",
+      "category": "Comms",
+      "image": "./index/tools/71/image.svg",
+      "description": "VoIP softphone for making calls over the internet.",
+      "link": "https://www.zoiper.com"
+    }
+  ]
 }
