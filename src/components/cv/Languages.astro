@@ -1,0 +1,35 @@
+---
+import { languages } from '@/data/languages';
+---
+
+<section class="">
+  <h2 class="h2 mb-4">Languages</h2>
+  <div class="hover:border-primary/30 hover:shadow-primary/5 dark:bg-base-900 rounded-lg border bg-white p-6 transition-all hover:shadow-lg">
+    {languages.map((language, index) => (
+      <div>
+        <div class="flex justify-between items-center mb-3">
+          <span class="text-sm sm:text-base font-semibold text-gray-900 dark:text-white">
+            {language.name}
+          </span>
+          <span class="text-base sm:text-lg font-semibold text-blue-600 dark:text-blue-400">
+            {language.level}/{language.maxLevel}
+          </span>
+        </div>
+        <div class="flex gap-1.5">
+          {Array.from({ length: language.maxLevel }).map((_, i) => (
+            <div
+              class={`h-1.5 w-6 rounded-full ${
+                i < language.level
+                  ? 'bg-blue-500'
+                  : 'bg-gray-200 dark:bg-gray-700'
+              }`}
+            />
+          ))}
+        </div>
+        {index !== languages.length - 1 && (
+          <div class="my-4 border-b border-gray-200 dark:border-gray-700"></div>
+        )}
+      </div>
+    ))}
+  </div>
+</section>

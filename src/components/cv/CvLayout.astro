@@ -1,0 +1,54 @@
+---
+import Experience from './Experience.astro';
+import Education from './Education.astro';
+import Certifications from './Certifications.astro';
+import Languages from './Languages.astro';
+import HardSkills from './HardSkills.astro';
+import SoftSkills from './SoftSkills.astro';
+import ToolsKnown from './ToolsKnown.astro';
+import Button from "@components/button/Button.astro";
+import { Icon } from "astro-icon/components";
+
+import { getLocaleFromUrl } from "@js/localeUtils";
+import { useTranslations } from "@js/translationUtils";
+
+const currLocale = getLocaleFromUrl(Astro.url);
+const t = useTranslations(currLocale);
+
+---
+
+<section class="container mx-auto max-w-8xl mb-20 pt-16 md:pt-32">
+  <div class="mx-auto mb-16 max-w-3xl text-center">
+    <h2 class="h2 mb-4">Profile & Expertise</h2>
+    <p class="description text-xl">
+      A blend of expertise, growth, and achievement — driven by passion and results.
+    </p>
+    <div class="mt-6 flex justify-center">
+      <Button href={t("link_cv")} download={t("link_cv")} variant="primary">
+        <div class="flex items-center gap-2">
+          <span>{t("download_cv")}</span>
+          <Icon name="tabler/download" aria-hidden="true" class="size-5" />
+        </div>
+      </Button>
+		</div>
+  </div>
+  <div class="flex flex-col xl:flex-row gap-6 sm:gap-8 mb-20">
+    <div class="xl:w-2/3">
+      <Experience />
+    </div>
+    <div class="xl:w-1/3">
+      <div class="xl:sticky xl:pt-12 xl:top-6 space-y-6 sm:space-y-8">
+        <Education />
+        <Certifications />
+        <Languages />
+      </div>
+    </div>
+  </div>
+  <div class="mt-6 sm:mt-8 grid grid-cols-1 lg:grid-cols-2 gap-6 mb-20">
+    <HardSkills />
+    <SoftSkills />
+  </div>
+  <div class="mt-6 sm:mt-8 mb-20">
+    <ToolsKnown />
+  </div>
+</section>

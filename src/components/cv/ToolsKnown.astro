@@ -1,0 +1,195 @@
+---
+import { tools, type Tool } from '@/data/tools';
+
+// Define how many tools to display
+const TOOLS_LIMIT = 9;
+
+// Limit the number of tools displayed
+const limitedTools = tools.slice(0, TOOLS_LIMIT);
+
+// Get unique categories only from the limited tools
+const uniqueCategories = [...new Set(limitedTools.flatMap(tool => tool.tags))].sort();
+// Add "All" at the beginning
+const categories = ["All", ...uniqueCategories];
+---
+
+<section class="" id="tools">
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 sm:gap-6">
+    <h2 class="h2 mb-4">Tools & Technologies</h2>
+    <a 
+      href="/tools2" 
+      class="group inline-flex items-center gap-2 px-4 sm:px-5 py-2 sm:py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-600 rounded-full shadow-md hover:shadow-lg hover:-translate-y-0.5 whitespace-nowrap"
+    >
+      View all {tools.length} tools
+      <svg 
+        class="w-4 h-4 transition-transform duration-200 group-hover:translate-x-1" 
+        fill="none" 
+        stroke="currentColor" 
+        viewBox="0 0 24 24"
+      >
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+      </svg>
+    </a>
+  </div>
+
+	<div class="mb-6 sm:mb-8">
+		<div class="flex flex-wrap gap-2 sm:gap-3">
+			<p class="description text-xl">A testament to my passion for innovation, learning, and impact.
+      </p>
+		</div>
+  </div>
+  
+  <div class="mb-6 sm:mb-8">
+    <div class="flex flex-wrap gap-2 sm:gap-3">
+      {categories.map((category) => (
+        <button
+          data-category={category}
+          class:list={[
+            "px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-sm font-medium diploma",
+            {
+              "bg-blue-500 text-white hover:bg-blue-600": category === "All",
+              "bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 hover:bg-gray-200 dark:hover:bg-gray-700": category !== "All"
+            }
+          ]}
+        >
+          {category}
+        </button>
+      ))}
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6" id="tools-grid">
+    {limitedTools.map((tool) => (
+      <div 
+        class="group hover:border-primary/30 hover:shadow-primary/5 dark:bg-base-900 rounded-xl border bg-white transition-all hover:shadow-lg p-4 sm:p-6 hover:shadow-lg hover:shadow-xl hover:-translate-y-1 relative"
+        data-categories={JSON.stringify(tool.tags)}
+      >
+        <div class="flex items-center gap-3 sm:gap-4 mb-3 sm:mb-4">
+          <div class="w-10 h-10 sm:w-12 sm:h-12 flex-shrink-0">
+            <img
+              src={tool.logo}
+              alt={`${tool.name} logo`}
+              class="w-full h-full object-contain transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0 dark:opacity-50 dark:grayscale dark:invert dark:group-hover:grayscale-100"
+            />
+          </div>
+          <h3 class="text-base sm:text-lg font-semibold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400  truncate">
+            <a
+          href={tool.url}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          {tool.name}
+        </a>
+          </h3>
+        </div>
+
+        <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400 mb-3 sm:mb-4 line-clamp-2">
+          {tool.description}
+        </p>
+
+        <div class="flex flex-wrap gap-1.5 sm:gap-2">
+          {tool.tags.map((tag) => (
+            <span class="px-2 sm:px-3 py-1 sm:py-1.5 bg-gray-100 dark:bg-gray-700 text-gray-600 dark:text-gray-300 rounded-full text-xs font-medium">
+              {tag}
+            </span>
+          ))}
+        </div>
+
+        <a
+          href={tool.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="absolute top-3 sm:top-4 right-3 sm:right-4 p-1.5 sm:p-2 rounded-full bg-gray-100 dark:bg-gray-700 hover:bg-blue-200 dark:hover:bg-blue-600"
+        >
+          <svg 
+            class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-gray-500 dark:text-gray-400" 
+            fill="none" 
+            stroke="currentColor" 
+            viewBox="0 0 24 24"
+          >
+            <path 
+              stroke-linecap="round" 
+              stroke-linejoin="round" 
+              stroke-width="2" 
+              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+            />
+          </svg>
+        </a>
+      </div>
+    ))}
+  </div>
+</section>
+
+<script>
+  function initializeToolsFilter() {
+    const toolsGrid = document.getElementById('tools-grid');
+    const tools = toolsGrid?.querySelectorAll('[data-categories]');
+    let selectedCategory = 'All';
+
+    function filterTools() {
+      if (!tools) return;
+      
+      tools.forEach(tool => {
+        const toolCategories = JSON.parse(tool.getAttribute('data-categories') || '[]');
+        const shouldShow = selectedCategory === 'All' || toolCategories.includes(selectedCategory);
+        
+        if (shouldShow) {
+          tool.classList.remove('hidden');
+          tool.classList.add('animate-fade-in');
+          setTimeout(() => tool.classList.remove('animate-fade-in'), 300);
+        } else {
+          tool.classList.add('hidden');
+        }
+      });
+    }
+
+    function updateButtonStyles() {
+      document.querySelectorAll('button[data-category]').forEach(btn => {
+        const category = btn.getAttribute('data-category');
+        if (!category) return;
+
+        if (category === selectedCategory) {
+          btn.classList.add('bg-blue-500', 'text-white', 'hover:bg-blue-600');
+          btn.classList.remove('bg-gray-100', 'dark:bg-gray-800', 'text-gray-700', 'dark:text-gray-300', 'hover:bg-gray-200', 'dark:hover:bg-gray-700');
+        } else {
+          btn.classList.remove('bg-blue-500', 'text-white', 'hover:bg-blue-600');
+          btn.classList.add('bg-gray-100', 'dark:bg-gray-800', 'text-gray-700', 'dark:text-gray-300', 'hover:bg-gray-200', 'dark:hover:bg-gray-700');
+        }
+      });
+    }
+
+    document.querySelectorAll('button[data-category]').forEach(button => {
+      button.addEventListener('click', () => {
+        const category = button.getAttribute('data-category');
+        if (!category) return;
+
+        selectedCategory = category;
+        updateButtonStyles();
+        filterTools();
+      });
+    });
+
+    // Initial filter
+    filterTools();
+  }
+
+  initializeToolsFilter();
+  document.addEventListener('astro:page-load', initializeToolsFilter);
+</script>
+
+<style>
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>

@@ -140,7 +140,7 @@
 		@apply text-base-900 hover:text-primary dark:text-base-200 leading-tight transition-colors;
 	}
 
-	.site-container {
+	.container {
 		@apply mx-auto max-w-[1400px] px-4;
 	}
 }
