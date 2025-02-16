@@ -1,0 +1,41 @@
+---
+import { hardSkills } from '@/data/hardSkills';
+---
+
+<section class="p-4 sm:p-6" id="skills">
+  <h2 class="h2 mb-4">Hard Skills</h2>
+  <div class="bg-white hover:border-primary/30 hover:shadow-primary/5 dark:bg-base-900 rounded-lg border bg-white p-4 transition-all hover:shadow-lg sm:p-6">
+    <div class="space-y-4 sm:space-y-6">
+      {hardSkills.map((skill, index) => (
+        <div class="group">
+          <div class="flex justify-between items-center mb-2 sm:mb-3">
+            <div class="flex items-center gap-2 sm:gap-3">
+              <span 
+                class="text-xl sm:text-2xl group-hover:scale-110 transition-transform duration-300" 
+                role="img" 
+                aria-label={skill.name}
+              >
+                {skill.icon}
+              </span>
+              <span class="text-sm sm:text-base md:text-lg font-medium text-gray-800 dark:text-gray-200 group-hover:text-blue-600 dark:group-hover:text-blue-400 ">
+                {skill.name}
+              </span>
+            </div>
+            <span class="text-sm sm:text-base md:text-lg font-medium text-blue-600 dark:text-blue-400 ml-2">
+              {skill.percentage}%
+            </span>
+          </div>
+          <div class="h-2 sm:h-2.5 bg-gray-200 dark:bg-gray-700 rounded-full overflow-hidden">
+            <div 
+              class="h-full bg-blue-500 rounded-full transition-all duration-500 ease-out group-hover:bg-blue-600"
+              style={`width: ${skill.percentage}%`}
+            ></div>
+          </div>
+          {index !== hardSkills.length - 1 && (
+            <div class="mt-4 sm:mt-6 border-b border-gray-200 dark:border-gray-700"></div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

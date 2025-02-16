@@ -1,0 +1,48 @@
+---
+import { education } from '@/data/education';
+---
+
+<section class="p-6">
+  <h2 class="h2 mb-4">Education</h2>
+  <div class="hover:border-primary/30 hover:shadow-primary/5 dark:bg-base-900 rounded-lg border bg-white p-6 transition-all hover:shadow-lg">
+    {education.map((edu, index) => (
+      <div>
+        <a 
+          href={edu.url} 
+          target="_blank" 
+          rel="noopener noreferrer"
+          class="flex items-center justify-between group"
+        >
+          <div>
+            <h3 class="text-sm sm:text-base font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 ">
+              {edu.degree}
+            </h3>
+            <div class="flex flex-wrap items-center gap-2">
+              <p class="text-xs sm:text-sm text-gray-600 dark:text-gray-400">{edu.diploma}</p>
+              <span class="text-gray-300 dark:text-gray-700 hidden sm:inline">•</span>
+              <p class="text-xs sm:text-sm text-gray-500 dark:text-gray-500">{edu.period}</p>
+            </div>
+          </div>
+          <div class="bg-gray-100 dark:bg-gray-700 p-2 sm:p-2.5 rounded-full group-hover:bg-blue-50 dark:group-hover:bg-blue-900 ">
+            <svg 
+              class="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 dark:text-gray-400 group-hover:text-blue-600 dark:group-hover:text-blue-400 " 
+              fill="none" 
+              stroke="currentColor" 
+              viewBox="0 0 24 24"
+            >
+              <path 
+                stroke-linecap="round" 
+                stroke-linejoin="round" 
+                stroke-width="2" 
+                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+              />
+            </svg>
+          </div>
+        </a>
+        {index !== education.length - 1 && (
+          <div class="my-4 border-b border-gray-200 dark:border-gray-700"></div>
+        )}
+      </div>
+    ))}
+  </div>
+</section>

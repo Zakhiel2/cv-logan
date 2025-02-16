@@ -37,6 +37,8 @@ import ContactSectionSimple from "@components/contact/ContactSectionSimple.astro
 import FaqAccordions from "@components/faq/FaqAccordions.astro";
 import FaqCards from "@components/faq/FaqCards.astro";
 
+import CvLayout from "@components/cv/CvLayout.astro";
+
 // utils
 import { getLocaleFromUrl } from "@js/localeUtils";
 import { getTranslatedData } from "@js/translationUtils";
@@ -52,7 +54,7 @@ const siteData = getTranslatedData("siteData", currLocale);
 	<LogoCloudMarquee />
 	<AboutAlternative />
 	<TestimonialSwiper />
-	<ProjectShowcaseSideImage />
+	<CvLayout />
 	<ProjectShowcaseCards />
 	<BlogSectionGridDetailed />
 	<ContactSection />

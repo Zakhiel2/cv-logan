@@ -74,7 +74,7 @@ export const textTranslations = {
 		contact_me: "Kontaktieren Sie mich",
 
 		references: "Referenzen",
-		references_description: "Was meine vorherigen Kollegen sagen zu meiner Arbeit",
+		references_description: "Rückmeldungen aus gemeinsamen Erfahrungen",
 
 		contact_getintouch: "Kontakt",
 		contact_connectwithme: "Mit mir verbinden",
@@ -132,7 +132,7 @@ export const textTranslations = {
 		contact_me: "Contact Me",
 
 		references: "References",
-		references_description: "What past colleagues say about working with me",
+		references_description: "Feedback from collaborative experiences",
 
 		contact_getintouch: "Get in Touch",
 		contact_connectwithme: "Connect with me",
@@ -191,7 +191,7 @@ export const textTranslations = {
 		contact_me: "Me Contacter",
 
 		references: "Références",
-		references_description: "Ce que disent mes anciens collègues",
+		references_description: "Retour d'expériences collaboratives",
 
 		contact_getintouch: "Contactez-moi",
 		contact_connectwithme: "Se connecter",
