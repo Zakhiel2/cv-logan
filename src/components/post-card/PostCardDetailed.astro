@@ -1,73 +1,140 @@
 ---
 import { getRelativeLocaleUrl } from "astro:i18n";
-import { type CollectionEntry, getEntries } from "astro:content";
+import { type CollectionEntry, getEntries, render } from "astro:content";
 import { Image } from "astro:assets";
 import { Icon } from "astro-icon/components";
-
-// components
-import Category from "@components/category/CategoryBadge.astro";
 
 // utils
 import { formatDate } from "@js/textUtils";
 import { getLocaleFromUrl } from "@js/localeUtils";
+import { slugify, humanize } from "@js/textUtils";
 
 interface Props {
 	post: CollectionEntry<"blog">;
 	showDescription?: boolean;
 	class?: string;
-	rest?: any; // catch-all for any additional parameters, such as "aria-label"
+	rest?: any;
 }
 
 const { post, showDescription = false, class: className, ...rest } = Astro.props as Props;
-const { title, description, categories, pubDate, heroImage } = post.data;
+const { title, description, categories, pubDate, heroImage, authors } = post.data;
 
 const currLocale = getLocaleFromUrl(Astro.url);
+
+// Calculate read time from full article content
+const wordsPerMinute = 200;
+const wordCount = post.body?.split(/\s+/g).length ?? description.split(/\s+/g).length;
+const readingTime = Math.max(1, Math.round(wordCount / wordsPerMinute));
+
+// Format date parts
+const date = new Date(pubDate);
+const day = date.getDate().toString().padStart(2, '0');
+const month = date.toLocaleString(currLocale, { month: 'short' });
+const year = date.getFullYear();
 ---
 
 <article
 	class:list={[
-		"hover:border-primary/30 hover:shadow-primary/5 dark:bg-base-900 overflow-hidden rounded-2xl border bg-white duration-300 hover:shadow-xl",
+		"group relative overflow-hidden rounded-2xl border border-base-200/50 dark:border-base-800/50",
+		"transition-all duration-500 hover:border-primary/20 dark:hover:border-primary/20 hover:shadow-2xl",
 		className,
 	]}
 	data-pagefind-ignore
 	{...rest}
 >
-	<a href={getRelativeLocaleUrl(currLocale, `/blog/${post.id}/`)}>
-		<div class="aspect-[16/9] overflow-hidden">
-			<Image
-				src={heroImage}
-				alt={title}
-				class="h-full w-full transform object-cover transition-transform duration-500 will-change-auto hover:scale-105"
-			/>
-		</div>
-	</a>
-	<div class="p-6">
-		<div class="mb-4 flex flex-wrap gap-2">
-			{categories && categories.slice(0, 2).map((category) => <Category category={category} />)}
-		</div>
-		<a
-			href={getRelativeLocaleUrl(currLocale, `/blog/${post.id}/`)}
-			class="hover:text-primary text-xl font-bold transition-colors"
-		>
-			<h2>{title}</h2>
-		</a>
-		<p class="description mt-2 mb-4 line-clamp-2 text-base">
-			{description}
-		</p>
-		<div class="flex items-center justify-between">
-			<time datetime={pubDate.toISOString()} class="text-base-500 text-sm">
-				{formatDate(pubDate, currLocale)}
-			</time>
-			<a
-				href={getRelativeLocaleUrl(currLocale, `/blog/${post.id}/`)}
-				class="decoration-primary group flex items-center transition-colors hover:underline"
-			>
-				Read More
-				<Icon
-					name="tabler/arrow-narrow-right"
-					class="ml-1 h-[1.4em] w-[1.4em] transition-transform group-hover:translate-x-1"
-				/>
-			</a>
+	<div class="aspect-[4/3] w-full">
+		<!-- Background Image -->
+		<Image
+			src={heroImage}
+			alt={title}
+			class="h-full w-full transform object-cover transition-all duration-700 will-change-transform group-hover:scale-110"
+		/>
+		
+		<!-- Gradient Overlay -->
+		<div class="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/90"></div>
+
+		<!-- Content Container -->
+		<div class="absolute inset-0 flex flex-col p-3 sm:p-4 md:p-6">
+			<!-- Top Section with Date and Reading Time -->
+			<div class="flex items-center justify-between space-x-4">
+				<!-- Date -->
+				<div class="flex items-center space-x-2">
+					<div class="flex items-center space-x-1 bg-white/10 backdrop-blur-md rounded-full">
+						<div class="bg-primary px-3 py-1.5 rounded-full">
+							<span class="text-xs font-bold text-white">{day}</span>
+							<span class="text-xs font-medium text-white">{month}</span>
+							<span class="text-xs text-white/70 ml-1">{year}</span>
+						</div>
+					</div>
+				</div>
+
+				<!-- Reading Time -->
+				<div class="flex items-center bg-white/10 backdrop-blur-md rounded-full px-3 py-1.5">
+					<div class="flex items-center space-x-1.5">
+						<svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+							<circle cx="12" cy="12" r="10" stroke-width="2"/>
+							<path d="M12 6v6l4 2" stroke-width="2" stroke-linecap="round"/>
+						</svg>
+						<span class="text-xs font-medium text-white">{readingTime} mins</span>
+					</div>
+				</div>
+			</div>
+
+			<!-- Main Content -->
+			<div class="mt-auto space-y-3 sm:space-y-4 md:space-y-6">
+				<!-- Title and Description -->
+				<div class="relative space-y-2">
+					<div class="absolute -left-3 sm:-left-4 md:-left-6 h-full w-1 origin-left scale-y-0 bg-primary transition-transform duration-300 group-hover:scale-y-100">
+					</div>
+
+					<a
+						href={getRelativeLocaleUrl(currLocale, `/blog/${post.id}/`)}
+						class="group/title block transition-colors"
+					>
+						<h2 class="text-xl font-bold text-white drop-shadow-lg">
+							{title}
+						</h2>
+					</a>
+					<p class="line-clamp-2 text-sm text-white/90 drop-shadow-lg">
+						{description}
+					</p>
+				</div>
+
+				<!-- Bottom Section with Tags and Read More -->
+				<div class="flex items-center justify-between gap-2">
+					<!-- Categories -->
+					<div class="flex flex-wrap gap-1.5 sm:gap-2">
+						{
+							categories
+								?.filter((category): category is string => typeof category === 'string')
+								.slice(0, 2)
+								.map((category) => (
+									<a
+										href={getRelativeLocaleUrl(currLocale, `/categories/${slugify(category)}`)}
+										class="rounded-full bg-white/10 px-2 py-0.5 sm:px-3 sm:py-1 text-xs text-white backdrop-blur-md transition-colors hover:bg-primary/40"
+									>
+										{humanize(category)}
+									</a>
+								))
+						}
+					</div>
+
+					<!-- Read More Button -->
+					<div class="translate-x-12 opacity-0 transition-all duration-500 group-hover:translate-x-0 group-hover:opacity-100">
+						<a
+							href={getRelativeLocaleUrl(currLocale, `/blog/${post.id}/`)}
+							class="group/arrow relative flex items-center gap-1 sm:gap-2 overflow-hidden rounded-full bg-white/10 px-2 py-1 sm:px-4 sm:py-2 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-primary"
+						>
+							<span class="relative z-10">Read Article</span>
+							<span class="relative z-10 text-lg transition-transform duration-300 group-hover/arrow:translate-x-1">→</span>
+							<div
+								class="absolute inset-0 -z-0 translate-x-[100%] bg-gradient-to-r from-primary to-primary-dark opacity-0 transition-all duration-500 group-hover/arrow:translate-x-0 group-hover/arrow:opacity-100"
+							>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 </article>
