@@ -120,7 +120,7 @@
   "tools": [
     {
       "name": "3CX",
-      "category": "Comms",
+      "category": "Comms,Design",
       "image": "./index/tools/0/image.svg",
       "description": "VoIP phone system with web-based management interface.",
       "link": "https://www.3cx.com"
